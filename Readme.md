@@ -52,19 +52,3 @@ This repository demonstrates different strategies for implementing intercepting 
     # or
    bun run dev
    ```
-
-## Key Features
-
-- URL-based navigation
-- Browser history support
-- Deep linking capabilities
-- SEO-friendly
-- Progressive enhancement
-
-## Contributing
-
-Feel free to open pull requests with improvements or additional strategies. Each PR will automatically get a preview deployment for easy testing.
-
-## License
-
-MIT
