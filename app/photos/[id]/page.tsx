@@ -11,5 +11,10 @@ export default async function PhotoPage({
   params: Promise<{ id: string }>;
 }) {
   const id = (await params).id;
-  return <div className="card">{id}</div>;
+  return (
+    <div>
+      <h1>/photos/[id] page</h1>
+      <div className="card">{id}</div>
+    </div>
+  );
 }
