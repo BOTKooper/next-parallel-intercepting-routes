@@ -9,21 +9,21 @@ This repository demonstrates different strategies for implementing intercepting 
 - Simplest approach
 - Uses direct route interception without any prefix
 - Best for simple modal implementations
-- [Preview Deployment](https://working-no-root-prefix.vercel.app)
+- [Preview Deployment](https://github.com/BOTKooper/next-parallel-intercepting-routes/pull/1)
 
 ### 2. Global Prefix (`working-with-global-prefix`)
 
 - Uses a global prefix for all intercepted routes
 - Provides consistent URL structure
 - Good for applications with multiple modal types
-- [Preview Deployment](https://working-with-global-prefix.vercel.app)
+- [Preview Deployment](https://github.com/BOTKooper/next-parallel-intercepting-routes/pull/2)
 
 ### 3. Partial Prefix (`working-with-partial-prefix`)
 
 - Uses selective prefixing for specific routes
 - Offers flexibility in URL structure
 - Ideal for mixed modal and full-page experiences
-- [Preview Deployment](https://working-with-partial-prefix.vercel.app)
+- [Preview Deployment](https://github.com/BOTKooper/next-parallel-intercepting-routes/pull/3)
 
 ## How to Use
 
