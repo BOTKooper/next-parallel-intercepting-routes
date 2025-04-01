@@ -8,7 +8,7 @@ export default function Page() {
       <h1>root page</h1>
       <section className="cards-container">
         {photos.map((id) => (
-          <Link className="card" key={id} href={`/photos/${id}`} passHref>
+          <Link className="card" key={id} href={`/${id}`} passHref>
             {id}
           </Link>
         ))}
