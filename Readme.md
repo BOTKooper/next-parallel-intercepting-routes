@@ -1,14 +1,70 @@
-# NextGram
+# Next.js Intercepting Routes Demo
 
-This is a sample Next.js application that takes advantage of the advanced routing capabilities.
+This repository demonstrates different strategies for implementing intercepting routes in Next.js 14+. Each branch showcases a unique approach to handling modal-like experiences with URL-based navigation.
 
-The photo route can be attached to _two distinct_ components:
+## Available Strategies
 
-1. When navigating within the application, it is rendered as a modal
-1. When the page is refreshed, it is rendered as a standalone page
+### 1. No Root Prefix (`working-no-root-prefix`)
 
-## Demo
+- Simplest approach
+- Uses direct route interception without any prefix
+- Best for simple modal implementations
+- [Preview Deployment](https://working-no-root-prefix.vercel.app)
 
-https://nextgram.vercel.app
+### 2. Global Prefix (`working-with-global-prefix`)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnextgram)
+- Uses a global prefix for all intercepted routes
+- Provides consistent URL structure
+- Good for applications with multiple modal types
+- [Preview Deployment](https://working-with-global-prefix.vercel.app)
+
+### 3. Partial Prefix (`working-with-partial-prefix`)
+
+- Uses selective prefixing for specific routes
+- Offers flexibility in URL structure
+- Ideal for mixed modal and full-page experiences
+- [Preview Deployment](https://working-with-partial-prefix.vercel.app)
+
+## How to Use
+
+1. Clone this repository
+2. Check out the branch that matches your preferred strategy:
+   ```bash
+   git checkout working-no-root-prefix  # or any other branch
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   # or
+   bun install
+   ```
+4. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+    # or
+   bun run dev
+   ```
+
+## Key Features
+
+- URL-based navigation
+- Browser history support
+- Deep linking capabilities
+- SEO-friendly
+- Progressive enhancement
+
+## Contributing
+
+Feel free to open pull requests with improvements or additional strategies. Each PR will automatically get a preview deployment for easy testing.
+
+## License
+
+MIT
